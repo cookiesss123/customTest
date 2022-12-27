@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">這裡是主控台</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">回到首頁</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section class="container">
+        <a href="admin-add.html">
+            <h1 class="fw-bold my-5">新增景點-GO!</h1>
+        </a>
+        <table class="table table-hover">
+            <thead class="bg-light">
+                <tr>
+                    <th width="100"># 標題</th>
+                    <th class="text-center">內文</th>
+                    <th width="150"></th>
+                </tr>
+            </thead>
+            <tbody id="list">
+                <tr>
+                    <td>
+                        <span class="text-danger">1</span>
+                        <span>子平</span>
+                    </td>
+                    <td>
+                        清末是瑪陵坑經濟最為鼎盛的時期，不僅盛產茶葉與樟腦等經濟作物，煤礦業也非常的興盛，還修築了一條輕便鐵軌，不只運載煤礦也可載貨載人，繁榮的瑪陵坑吸引許多人口入住，根據當地耆老表示當時熱鬧的盛況並不下於七堵市集。
+
+                            雖然現今的瑪陵坑地區已不盛產茶葉與樟腦，但在農會與市政府的輔導之下，創建了許多休閒觀光農場，假日不彷到這裡享用當地美味的地山藥與綠竹筍喔！
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-danger">刪除</button>
+                            <button type="button" class="btn btn-warning">編輯</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="config.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
